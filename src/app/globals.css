@@ -1,26 +1,47 @@
 @import "tailwindcss";
+@tailwind utilities;
+@import "@fontsource/montserrat";
+@import "@fontsource/playfair-display";
+
+@theme {
+  --color-accent: #754D1D;
+  --color-accent-100: "#E3DBD2";
+  --color-accent-200: "#c8b8a5";
+  --color-accent-300: "#ac9477";
+  --color-accent-400: "#91714a";
+  --color-accent-600: "#5e3e17";
+  --color-accent-700: "#462e11";
+  --color-accent-800: "#2f1f0c";
+  --color-accent-900: "#170f06";
+  --color-bg-white: #FDFBFA;
+  --font-serif: 'Playfair Display';
+  --color-bg: #fffaed;
+  --color-foreground: #171717;
+}
 
 :root {
-  --background: #ffffff;
+  --background: #fffaed;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: 'Montserrat', sans-serif;
+  --font-mono: 'Courier New', Courier, monospace;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin-inline: auto;
+  padding-inline: 2em;
+}
+
+.fixed-bg {
+  background-image: url("/piatti/7-3.jpg");
+  background-size: cover;
+
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgb(255, 224, 167);
 }
