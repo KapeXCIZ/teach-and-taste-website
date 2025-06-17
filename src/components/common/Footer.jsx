@@ -6,18 +6,20 @@ import { ChefHatIcon, CookieIcon, CopyrightIcon, EnvelopeIcon, HeartIcon, MapPin
 import Link from "next/link";
 import PrivacyModal from "../PrivacyModal";
 import CookieModal from "../CookieModal";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+    const t = useTranslations();
     return (
         <footer className="w-full h-fit bg-bg-white border-t border-t-accent/50 py-6 pb-8">
             <div className="container flex flex-col md:flex-row justify-center items-center gap-4">
                 <Link href={"/"} className="order-1 md:order-2">
-                    <Image className=" h-auto w-auto max-w-[400px]" src={"/logo-extended-1.svg"} width={200} height={200} alt="Footer logo extended" />
+                    <Image className=" h-auto w-auto max-w-[400px]" src={"/images/logo-extended-1.svg"} width={200} height={200} alt="Footer logo extended" />
                 </Link>
                 <div className="w-full h-[100%] order-2 md:order-1">
                     <div className=" grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-2 text-accent text-nowrap w-fit mx-auto *:mx-auto">
-                        <CustomLink buttonClassName="gap-2 w-fit" href="/chi-sono"><ChefHatIcon size={16} weight="duotone" />Chi sono</CustomLink>
-                        <CustomLink buttonClassName="gap-2 w-fit" href="/contatti"><PhoneCallIcon size={16} weight="duotone" /> Contattami</CustomLink>
+                        <CustomLink buttonClassName="gap-2 w-fit" href="/chi-sono"><ChefHatIcon size={16} weight="duotone" />{t("nav.about")}</CustomLink>
+                        <CustomLink buttonClassName="gap-2 w-fit" href="/contatti"><PhoneCallIcon size={16} weight="duotone" /> {t("footer.contacts")}</CustomLink>
                         <CookieModal />
                         <PrivacyModal />
                     </div>
@@ -30,17 +32,17 @@ export default function Footer() {
                             <a href="mailto:info@teachandtaste.it" className="flex flex-row justify-center items-start gap-1 hover:underline underline-offset-3 decoration-accent/50"><EnvelopeIcon size={26} weight="duotone" className="text-accent" />info@teachandstaste.it</a>
                         </div>
                         <div className="sm:text-md w-fit">
-                            <p className="flex flex-row justify-center items-start gap-1 hover:underline underline-offset-3 decoration-accent/50"><MapPinIcon size={26} weight="duotone" className="text-accent" />Viale Antonio Gramsci 62/A, Camucia Cortona AR</p>
+                            <p className="flex flex-row justify-center items-start gap-1 hover:underline underline-offset-3 decoration-accent/50"><MapPinIcon size={26} weight="duotone" className="text-accent" />{t("footer.address")}</p>
                         </div>
                         <div className="sm:text-md w-fit">
-                            <p className="flex flex-row justify-center items-start gap-1 hover:underline underline-offset-3 decoration-accent/50"><ReadCvLogoIcon size={26} weight="duotone" className="text-accent" />Partita IVA: IT02507070510</p>
+                            <p className="flex flex-row justify-center items-start gap-1 hover:underline underline-offset-3 decoration-accent/50"><ReadCvLogoIcon size={26} weight="duotone" className="text-accent" />{t("footer.vat")}</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="w-full flex flex-col sm:flex-row justify-center items-center mt-6 container text-nowrap gap-1">
                 <div className="text-xs text-neutral-500 flex flex-row items-center gap-1">
-                    <CopyrightIcon /> {new Date().getFullYear()} Teach and Taste. Tutti i diritti riservati.
+                    <CopyrightIcon /> {new Date().getFullYear()} Teach and Taste. {t("footer.rights")}
                 </div>
                 <div className="text-xs text-neutral-500 mx-1 hidden sm:block">
                     |

@@ -6,15 +6,15 @@ import { ImageCarousel } from "@/components/ImageCarousel";
 
 export default function Home() {
   const slides = [
-    '/piatti/1.jpg',
-    '/piatti/2.jpg',
-    '/piatti/4.jpg',
-    '/piatti/5.jpg',
-    '/piatti/6.jpg',
-    '/piatti/8.jpg',
-    '/piatti/9.jpg',
-    '/piatti/12.jpg',
-    '/piatti/13.jpg',
+    '/images/piatti/1.jpg',
+    '/images/piatti/2.jpg',
+    '/images/piatti/4.jpg',
+    '/images/piatti/5.jpg',
+    '/images/piatti/6.jpg',
+    '/images/piatti/8.jpg',
+    '/images/piatti/9.jpg',
+    '/images/piatti/12.jpg',
+    '/images/piatti/13.jpg',
   ]
   return (
     <>

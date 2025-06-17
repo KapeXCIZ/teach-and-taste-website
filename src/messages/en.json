@@ -1,0 +1,106 @@
+{
+    "nav": {
+        "about": "About me",
+        "contacts": "Contacts"
+    },
+    "home": {
+        "hero": {
+            "title": {
+                "1": "Tailor-made",
+                "italic": "culinary ",
+                "2": "",
+                "underline": "experiences",
+                "3": ":"
+            },
+            "description": "Cooking class, private chef and events: experience cooking like you've never done before.",
+            "cta-button": "Book an experience",
+            "about": "About me",
+            "alt": {
+                "dishes": "Image of some chef's dishes",
+                "onion": "Decorative illustration of an onion",
+                "cheese": "Decorative illustration of cheese"
+            }
+        },
+        "cta": {
+            "quote": "«Cooking is experience, relationship, discovery.»",
+            "subtitle": "Find out how we can create it together.",
+            "cta-button": "Book an experience",
+            "contact-button": "Contact me"
+        },
+        "cta2": {
+            "quote": "If you want to bring an authentic cooking experience to your home or event, I will be happy to cook for you.",
+            "contact-button": "Contact me"
+        },
+        "services": {
+            "title": "What do I offer?",
+            "subtitle": "I offer you tailor-made culinary experiences, bringing professional cooking directly to your home or events.",
+            "list": [
+                {
+                    "title": "Private chef",
+                    "description": "A private culinary experience directly at your home. Whether it's an intimate dinner, a special occasion or an evening with friends, I take care of everything: from shopping to plating.",
+                    "alt": "Chef hat icon"
+                },
+                {
+                    "title": "Cooking classes",
+                    "description": "Practical lessons for every level, tailored for you. At your home or in my lab, to learn techniques, recipes and kitchen secrets in an informal and engaging environment.",
+                    "alt": "Graduation cap icon"
+                },
+                {
+                    "title": "Event catering",
+                    "description": "The best restaurant, at your home. You choose the type of experience: a dinner, an event, or a cooking class.",
+                    "alt": "Oven icon"
+                },
+                {
+                    "title": "Food consulting",
+                    "description": "Support for menu development, cost analysis, cooking show planning and space optimization.",
+                    "alt": "Fork and knife icon"
+                }
+            ]
+        }
+    },
+    "footer": {
+        "contacts": "Contact me",
+        "address": "Viale Antonio Gramsci 62/A, Camucia Cortona AR",
+        "vat": "VAT: IT02507070510",
+        "rights": "All rights reserved."
+    },
+    "notfound": {
+        "description": "Page not found",
+        "cta": "Back to home"
+    },
+    "privacy": {
+        "title": "Privacy & Cookie Policy",
+        "description": "This site does not collect or process personal data. It does not use profiling cookies or tracking technologies.",
+        "close": "Close"
+    },
+    "cookie": {
+        "title": "Cookie usage information",
+        "description": "This site uses only technical cookies to ensure the correct functioning of the pages and improve the browsing experience. No profiling cookies or third-party cookies for advertising purposes are used. By continuing to browse, you accept the use of these technical cookies.",
+        "accept": "Accept and continue"
+    },
+    "images": {
+        "hero": "Image of some chef's dishes",
+        "onion": "Decorative illustration of an onion",
+        "cheese": "Decorative illustration of cheese",
+        "knife": "Decorative illustration of a knife",
+        "tools": "Decorative illustration of some kitchen tools",
+        "pots": "Decorative illustration of some pots"
+    },
+    "contacts": {
+        "title": {
+            "1": "Keep in",
+            "underline": "touch"
+        },
+        "description": "For requests, reservations or collaborations, you can contact me by email or phone. I always respond with pleasure."
+    },
+    "about": {
+        "hero": {
+            "title": "Welcome, I'm",
+            "description": "In a world full of gastronomic choices, I choose simplicity."
+        },
+        "experience": {
+            "title": "Almost thirty years of experience, between technique and passion",
+            "description": "What I bring to the table is almost thirty years of experience in the restaurant industry. My journey has been shaped by a wide range of experiences: from the most refined and gourmet cuisine to the deep roots of culinary tradition."
+        }
+    }
+}

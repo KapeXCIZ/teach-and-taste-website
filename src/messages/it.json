@@ -1,0 +1,106 @@
+{
+    "nav": {
+        "about": "Chi sono",
+        "contacts": "Contatti"
+    },
+    "home": {
+        "hero": {
+            "title": {
+                "1": "Esperienze",
+                "italic": "culinarie ",
+                "2": "su",
+                "underline": "misura",
+                "3": ":"
+            },
+            "description": "Cooking class, chef a domicilio ed eventi privati: vivi la cucina come non l’hai mai fatta.",
+            "cta-button": "Prenota un'esperienza",
+            "about": "Chi sono",
+            "alt": {
+                "dishes": "Immagine di alcuni piatti dello chef",
+                "onion": "Illustrazione decorativa di una cipolla",
+                "cheese": "Illustrazione decorativa di una cipolla"
+            }
+        },
+        "cta": {
+            "quote": "«La cucina è esperienza, relazione, scoperta.»",
+            "subtitle": "Scopri come possiamo crearla insieme.",
+            "cta-button": "Prenota un'esperienza",
+            "contact-button": "Contattami"
+        },
+        "cta2": {
+            "quote": "Se vuoi portare un’esperienza di cucina autentica nella tua casa o nel tuo evento, sarò felice di cucinare per te.",
+            "contact-button": "Contattami"
+        },
+        "services": {
+            "title": "Cosa offro?",
+            "subtitle": "Ti offro esperienze culinarie su misura, portando la cucina professionale direttamente a casa tua o nei tuoi eventi.",
+            "list": [
+                {
+                    "title": "Chef a domicilio",
+                    "description": "Un’esperienza culinaria privata direttamente a casa tua. Che si tratti di una cena intima, una ricorrenza o una serata speciale tra amici, mi occupo di tutto: dalla spesa all’impiattamento.",
+                    "alt": "Icona cappello da chef"
+                },
+                {
+                    "title": "Corsi di cucina",
+                    "description": "Lezioni pratiche pensate per ogni livello, realizzate su misura per te. A casa tua o al mio laboratorio, per imparare tecniche, ricette e segreti della cucina, in un ambiente informale e coinvolgente.",
+                    "alt": "Icona cappello di laurea"
+                },
+                {
+                    "title": "Catering per eventi",
+                    "description": "Il miglior ristorante, a casa tua. Scegli tu il tipo di esperienza: una cena, un evento, o una lezione di cucina.",
+                    "alt": "Icona forno"
+                },
+                {
+                    "title": "Consulenza gastronomica",
+                    "description": "Supporto per lo sviluppo del menù, analisi dei costi, pianificazione cooking show ed ottimizzazione degli spazi.",
+                    "alt": "Icona forchetta e coltello"
+                }
+            ]
+        }
+    },
+    "footer": {
+        "contacts": "Contattami",
+        "address": "Viale Antonio Gramsci 62/A, Camucia Cortona AR",
+        "vat": "Partita IVA: IT02507070510",
+        "rights": "Tutti i diritti riservati."
+    },
+    "notfound": {
+        "description": "Pagina non trovata",
+        "cta": "Torna alla home"
+    },
+    "privacy": {
+        "title": "Privacy & Cookie Policy",
+        "description": "Questo sito non raccoglie né tratta dati personali. Non utilizza cookie di profilazione né tecnologie di tracciamento.",
+        "close": "Chiudi"
+    },
+    "cookie": {
+        "title": "Informativa sull’uso dei cookie",
+        "description": "Questo sito utilizza solo cookie tecnici per garantire il corretto funzionamento delle pagine e migliorare l’esperienza di navigazione. Non vengono utilizzati cookie di profilazione né cookie di terze parti a fini pubblicitari. Continuando la navigazione, accetti l’utilizzo di questi cookie tecnici.",
+        "accept": "Accetta e continua"
+    },
+    "images": {
+        "hero": "Immagine di alcuni piatti dello chef",
+        "onion": "Illustrazione decorativa di una cipolla",
+        "cheese": "Illustrazione decorativa di un formaggio",
+        "knife": "Illustrazione decorativa di un coltello",
+        "tools": "Illustrazione decorativa di utensili da cucina",
+        "pots": "Illustrazione decorativa di padelle"
+    },
+    "contacts": {
+        "title": {
+            "1": "Restiamo in",
+            "underline": "contatto"
+        },
+        "description": "Per richieste, prenotazioni o collaborazioni, puoi contattarmi tramite email o telefono. Rispondo sempre con piacere."
+    },
+    "about": {
+        "hero": {
+            "title": "Piacere, sono",
+            "description": "In un mondo pieno di scelte gastronomiche, io scelgo la semplicità."
+        },
+        "experience": {
+            "title": "Quasi trent’anni di esperienza, tra tecnica e passione",
+            "description": "Ciò che porto in tavola è quasi trent'anni di esperienza nel settore della ristorazione. Il mio percorso si è formato attraverso una vasta gamma di esperienze: dalla cucina più raffinata e gourmet, fino alle radici profonde della tradizione culinaria."
+        }
+    }
+}

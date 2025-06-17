@@ -7,6 +7,6 @@ import { cn } from "@/lib/utils";
 export default function CustomLink({ children, href = "", buttonClassName = "", linkClassName = "", variant }) {
     const pathName = usePathname();
     return (
-        <Link href={href} className={cn("w-fit", linkClassName)}><Button active={pathName === href} className={buttonClassName} variant={variant}>{children}</Button></Link>
+        <Link href={href} className={cn("w-fit h-fit", linkClassName)}><Button active={pathName.endsWith(href)} className={buttonClassName} variant={variant}>{children}</Button></Link>
     );
 };

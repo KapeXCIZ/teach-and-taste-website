@@ -1,8 +1,11 @@
 'use client'
 
+import { useTranslations } from "next-intl"
 import Image from "next/image"
 
 export default function ChiSonoHero() {
+    const t = useTranslations("about.hero")
+
     return (
         <header className="container">
             <div className="flex flex-col md:flex-row py-10 md:py-20 xl:py-30 gap-8 mx-auto md:max-w-10/12">
@@ -18,10 +21,10 @@ export default function ChiSonoHero() {
                 </div>
                 <div className="flex flex-col justify-center gap-4 lg:gap-10 ">
                     <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif">
-                        Piacere, sono <span className="underline decoration-auto hover:decoration-wavy decoration-yellow-400">Eduard</span>
+                        {t("title")} <span className="underline decoration-auto hover:decoration-wavy decoration-yellow-400">Eduard</span>
                     </h1>
                     <h3 className="text-base md:text-xl lg:text-2xl xl:text-3xl">
-                        In un mondo pieno di scelte gastronomiche, io scelgo la semplicità.
+                        {t("description")}
                     </h3>
                 </div>
             </div>

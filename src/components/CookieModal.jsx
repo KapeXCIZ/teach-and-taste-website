@@ -3,9 +3,11 @@ import { Description, Dialog, DialogPanel, DialogTitle } from '@headlessui/react
 import { useState } from 'react'
 import Button from './Button';
 import { CookieIcon } from '@phosphor-icons/react';
+import { useTranslations } from 'use-intl';
 
 export default function CookieModal() {
     const [isOpen, setIsOpen] = useState(false);
+    const t = useTranslations("cookie");
 
     return (
         <>
@@ -22,12 +24,10 @@ export default function CookieModal() {
 
                 {/* contenuto modale */}
                 <DialogPanel className="relative bg-white p-6 rounded-xl shadow-xl max-w-md mx-auto z-50">
-                    <DialogTitle className="text-lg font-bold mb-4">Informativa sull’uso dei cookie
+                    <DialogTitle className="text-lg font-bold mb-4">{t("title")}
                     </DialogTitle>
                     <Description className="text-sm text-gray-700">
-                        Questo sito utilizza solo cookie tecnici per garantire il corretto funzionamento delle pagine e migliorare l’esperienza di navigazione.<br />
-                        Non vengono utilizzati cookie di profilazione né cookie di terze parti a fini pubblicitari.<br />
-                        Continuando la navigazione, accetti l’utilizzo di questi cookie tecnici.<br />
+                        {t("description")}
                     </Description>
 
                     <Button
@@ -35,7 +35,7 @@ export default function CookieModal() {
                         variant='solid'
                         className={"mt-4"}
                     >
-                        Accetta e continua
+                        {t("accept")}
                     </Button>
                 </DialogPanel>
             </Dialog>

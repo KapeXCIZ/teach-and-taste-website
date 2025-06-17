@@ -2,10 +2,11 @@ import { Description, Dialog, DialogPanel, DialogTitle } from '@headlessui/react
 import { useState } from 'react'
 import Button from './Button';
 import { KeyholeIcon } from '@phosphor-icons/react';
+import { useTranslations } from 'next-intl';
 
 export default function PrivacyModal() {
     const [isOpen, setIsOpen] = useState(false);
-
+    const t = useTranslations("privacy");
     return (
         <>
             <Button
@@ -23,8 +24,8 @@ export default function PrivacyModal() {
                 <DialogPanel className="relative bg-white p-6 rounded-xl shadow-xl max-w-md mx-auto z-50">
                     <DialogTitle className="text-lg font-bold mb-4">Privacy & Cookie Policy</DialogTitle>
                     <Description className="text-sm text-gray-700">
-                        Questo sito non raccoglie né tratta dati personali.
-                        Non utilizza cookie di profilazione né tecnologie di tracciamento.
+                        {t("description")}
+
                     </Description>
 
                     <Button
@@ -32,7 +33,7 @@ export default function PrivacyModal() {
                         variant='solid'
                         className={"mt-4"}
                     >
-                        Chiudi
+                        {t("close")}
                     </Button>
                 </DialogPanel>
             </Dialog>
