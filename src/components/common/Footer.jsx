@@ -14,7 +14,7 @@ export default function Footer() {
     return (
         <footer className="w-full h-fit bg-bg-white border-t border-t-accent/50 py-6 pb-8">
             <div className="container flex flex-col md:flex-row justify-center items-center gap-4">
-                <Link href={"/"} className="order-1 md:order-2">
+                <Link href={`/${locale}/`} className="order-1 md:order-2">
                     <Image className=" h-auto w-auto max-w-[400px]" src={"/images/logo-extended-1.svg"} width={200} height={200} alt="Footer logo extended" />
                 </Link>
                 <div className="w-full h-[100%] order-2 md:order-1">

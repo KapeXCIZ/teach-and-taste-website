@@ -38,7 +38,7 @@ export default function Navbar({ locale }) {
     return (
         <nav className={cn(" w-full h-22 sticky top-0 z-50 bg-bg flex items-center justify-between border-accent/20", isScrolled ? "shadow-lg bg-bg/90 backdrop-blur-lg" : "")}>
             <div className="container flex  items-center justify-between gap-1">
-                <Link href={"/"} className="flex flex-column gap-2 justify-content-center items-center">
+                <Link href={`/${locale}/`} className="flex flex-column gap-2 justify-content-center items-center">
                     <Image className="" alt="Site logo" src={"/images/logo.svg"} width={64} height={64} />
                     <div className="text-accent tracking-[.2em]  sm:block hidden">TEACH AND TASTE</div>
                 </Link>

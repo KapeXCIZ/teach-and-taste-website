@@ -21,7 +21,7 @@ export default function Hero({ }) {
                     <CustomLink buttonClassName="gap-2 w-fit" href={`/${locale}/chi-sono`}><ChefHatIcon className="text-accent" weight="duotone" size={20} />{t("hero.about")}</CustomLink>
                 </div>
             </div>
-            <Image src={"/images/Hero Image.png"} width={1500} height={1500} className="z-30 pointer-events-none" alt={t("hero.alt.dishes")} />
+            <Image src={"/images/hero-image-optim.png"} width={1500} height={1500} className="z-30 pointer-events-none" alt={t("hero.alt.dishes")} />
             <Image src={"/images/sketches/onion.svg"} width={250} height={250} className="absolute left-5 md:-left-10 -top-10 -z-10 sm:z-0   xl:w-auto w-36 h-auto opacity-50 hover:opacity-90 transition duration-300 ease-in-out" alt={i("onion")} />
             <Image src={"/images/sketches/cheese.svg"} width={200} height={200} className="absolute right-5 md:-right-10 -bottom-10  xl:w-auto w-32 h-auto opacity-50 hover:opacity-90 transition duration-300 ease-in-out" alt={i("cheese")} />
         </header>
