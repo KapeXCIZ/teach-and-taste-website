@@ -3,11 +3,12 @@
 import Image from "next/image";
 import CustomLink from "./CustomLink";
 import { ChefHatIcon, PhoneCallIcon } from "@phosphor-icons/react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function Hero({ }) {
     const t = useTranslations("home");
     const i = useTranslations("images");
+    const locale = useLocale();
 
     return (
         <header className="w-full grid grid-cols-1 md:grid-cols-2 mt-20 gap-2 container relative ">
@@ -16,8 +17,8 @@ export default function Hero({ }) {
                 <p className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl">{t("hero.description")}</p>
                 {/* alt: Cooking class, chef a domicilio ed eventi privati: vivi la cucina come non l’hai mai fatta */}
                 <div className="text-sm md:text-md lg:text-lg xl:text-xl font-sans flex flex-col lg:flex-row gap-4 text-nowrap">
-                    <CustomLink buttonClassName="gap-2 w-fit" href="/contatti" variant={"solid"}><PhoneCallIcon weight="duotone" size={20} />{t("hero.cta-button")}</CustomLink>
-                    <CustomLink buttonClassName="gap-2 w-fit" href="/chi-sono"><ChefHatIcon className="text-accent" weight="duotone" size={20} />{t("hero.about")}</CustomLink>
+                    <CustomLink buttonClassName="gap-2 w-fit" href={`/${locale}/contatti`} variant={"solid"}><PhoneCallIcon weight="duotone" size={20} />{t("hero.cta-button")}</CustomLink>
+                    <CustomLink buttonClassName="gap-2 w-fit" href={`/${locale}/chi-sono`}><ChefHatIcon className="text-accent" weight="duotone" size={20} />{t("hero.about")}</CustomLink>
                 </div>
             </div>
             <Image src={"/images/Hero Image.png"} width={1500} height={1500} className="z-30 pointer-events-none" alt={t("hero.alt.dishes")} />

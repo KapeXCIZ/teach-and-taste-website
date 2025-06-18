@@ -6,10 +6,11 @@ import { ChefHatIcon, CookieIcon, CopyrightIcon, EnvelopeIcon, HeartIcon, MapPin
 import Link from "next/link";
 import PrivacyModal from "../PrivacyModal";
 import CookieModal from "../CookieModal";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function Footer() {
     const t = useTranslations();
+    const locale = useLocale();
     return (
         <footer className="w-full h-fit bg-bg-white border-t border-t-accent/50 py-6 pb-8">
             <div className="container flex flex-col md:flex-row justify-center items-center gap-4">
@@ -18,8 +19,8 @@ export default function Footer() {
                 </Link>
                 <div className="w-full h-[100%] order-2 md:order-1">
                     <div className=" grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-2 text-accent text-nowrap w-fit mx-auto *:mx-auto">
-                        <CustomLink buttonClassName="gap-2 w-fit" href="/chi-sono"><ChefHatIcon size={16} weight="duotone" />{t("nav.about")}</CustomLink>
-                        <CustomLink buttonClassName="gap-2 w-fit" href="/contatti"><PhoneCallIcon size={16} weight="duotone" /> {t("footer.contacts")}</CustomLink>
+                        <CustomLink buttonClassName="gap-2 w-fit" href={`/${locale}/chi-sono`}><ChefHatIcon size={16} weight="duotone" />{t("nav.about")}</CustomLink>
+                        <CustomLink buttonClassName="gap-2 w-fit" href={`/${locale}/contatti`}><PhoneCallIcon size={16} weight="duotone" /> {t("footer.contacts")}</CustomLink>
                         <CookieModal />
                         <PrivacyModal />
                     </div>

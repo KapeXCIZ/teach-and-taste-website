@@ -1,10 +1,11 @@
 'use client'
 import CustomLink from "./CustomLink";
 import { ChefHatIcon, PhoneCallIcon } from "@phosphor-icons/react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function CTASection2() {
     const t = useTranslations("home");
+    const locale = useLocale();
     return (
         <section className="py-26 ">
             {/* contenitore centrato */}
@@ -17,7 +18,7 @@ export default function CTASection2() {
 
                 {/* doppia CTA */}
                 <div className="text-sm md:text-md lg:text-lg xl:text-xl font-sans flex flex-col justify-center items-center lg:flex-row gap-4 text-nowrap">
-                    <CustomLink buttonClassName="gap-2 w-fit" href="/contatti" variant={"solid"}><PhoneCallIcon weight="duotone" size={20} />{t("cta2.contact-button")}</CustomLink>
+                    <CustomLink buttonClassName="gap-2 w-fit" href={`/${locale}/contatti`} variant={"solid"}><PhoneCallIcon weight="duotone" size={20} />{t("cta2.contact-button")}</CustomLink>
                 </div>
             </div>
         </section>

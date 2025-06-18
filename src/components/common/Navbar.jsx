@@ -43,8 +43,8 @@ export default function Navbar({ locale }) {
                     <div className="text-accent tracking-[.2em]  sm:block hidden">TEACH AND TASTE</div>
                 </Link>
                 <div className="flex flex-column gap-1 sm:gap-2 text-xs lg:text-lg text-nowrap justify-center items-center">
-                    <CustomLink buttonClassName="gap-1 sm:gap-2" href="/chi-sono"><ChefHatIcon className="text-accent" weight="duotone" size={20} />{t("about")}</CustomLink>
-                    <CustomLink buttonClassName="gap-1 sm:gap-2" href="/contatti" ><PhoneCallIcon className="text-accent" weight="duotone" size={20} />{t("contacts")}</CustomLink>
+                    <CustomLink buttonClassName="gap-1 sm:gap-2" href={`/${locale}/chi-sono`}><ChefHatIcon className="text-accent" weight="duotone" size={20} />{t("about")}</CustomLink>
+                    <CustomLink buttonClassName="gap-1 sm:gap-2" href={`/${locale}/contatti`} ><PhoneCallIcon className="text-accent" weight="duotone" size={20} />{t("contacts")}</CustomLink>
                     <Button onClick={switchLocale} className="px-3 text-lg">{locale === "en" ? "🇮🇹" : "🇬🇧"}</Button>
                 </div>
             </div>
