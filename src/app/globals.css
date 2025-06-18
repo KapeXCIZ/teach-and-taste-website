@@ -24,6 +24,7 @@
   --foreground: #171717;
   --font-sans: 'Montserrat', sans-serif;
   --font-mono: 'Courier New', Courier, monospace;
+  background-color: var(--background);
 }
 
 body {
