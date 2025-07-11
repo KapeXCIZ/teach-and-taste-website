@@ -80,6 +80,9 @@ export default async function LocaleLayout({ children, params }) {
 
   return (
     <html lang={locale}>
+      <head>
+        <meta name="apple-mobile-web-app-title" content="Teach and Taste" />
+      </head>
       <body className={`antialiased`}>
         <NextIntlClientProvider >
           <Navbar locale={locale} />
