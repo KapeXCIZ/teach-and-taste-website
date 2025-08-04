@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import CustomLink from "../CustomLink";
-import { ChefHatIcon, CookieIcon, CopyrightIcon, EnvelopeIcon, HeartIcon, MapPinIcon, PhoneCallIcon, ReadCvLogoIcon } from "@phosphor-icons/react";
+import { ChefHatIcon, CookieIcon, CopyrightIcon, EnvelopeIcon, HeartIcon, InstagramLogoIcon, MapPinIcon, PhoneCallIcon, ReadCvLogoIcon } from "@phosphor-icons/react";
 import Link from "next/link";
 import PrivacyModal from "../PrivacyModal";
 import CookieModal from "../CookieModal";
@@ -26,6 +26,9 @@ export default function Footer() {
                     </div>
                     <hr className="text-accent/50 my-6 lg:mx-16" />
                     <div className="flex flex-col  md:flex-row gap-8 justify-start lg:justify-around items-center flex-wrap py-3 mx-auto w-fit">
+                        <div className="sm:text-md w-fit">
+                            <a href="https://www.instagram.com/teachandtaste_cortona/" className="flex flex-row justify-center items-start gap-1 hover:underline underline-offset-3 decoration-accent/50"><InstagramLogoIcon size={26} weight="duotone" className="text-accent" />@teachandtaste_cortona</a>
+                        </div>
                         <div className="sm:text-md w-fit">
                             <a href="tel:+393476179570" className="flex flex-row justify-center items-start gap-1 hover:underline underline-offset-3 decoration-accent/50"><PhoneCallIcon size={26} weight="duotone" className="text-accent" />+39 347 617 9570</a>
                         </div>

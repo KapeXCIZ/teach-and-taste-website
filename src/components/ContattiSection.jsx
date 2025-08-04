@@ -1,6 +1,6 @@
 'use client'
 
-import { EnvelopeIcon, MapPinIcon, PhoneCallIcon, ReadCvLogoIcon } from "@phosphor-icons/react";
+import { EnvelopeIcon, InstagramLogoIcon, MapPinIcon, PhoneCallIcon, ReadCvLogoIcon } from "@phosphor-icons/react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
@@ -15,6 +15,11 @@ export default function ContattiSection() {
             </div>
             <div>
                 <div className="flex flex-col gap-6 justify-start items-start flex-wrap  mx-auto w-full bg-accent/10 backdrop-blur-lg p-10 rounded-3xl relative z-20">
+
+                    <div className="sm:text-xl w-fit">
+                        <a href="https://www.instagram.com/teachandtaste_cortona/" className="flex flex-row justify-center items-start gap-1 hover:underline underline-offset-3 decoration-accent/50"><InstagramLogoIcon size={26} weight="duotone" className="text-accent" />@teachandtaste_cortona</a>
+                    </div>
+
                     <div className="sm:text-xl w-fit">
                         <a href="tel:+393476179570" className="flex flex-row justify-center items-start gap-1 hover:underline underline-offset-3 decoration-accent/50"><PhoneCallIcon size={26} weight="duotone" className="text-accent" />+39 347 617 9570</a>
                     </div>
