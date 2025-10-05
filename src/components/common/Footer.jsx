@@ -51,7 +51,7 @@ export default function Footer() {
                 <div className="text-xs text-neutral-500 mx-1 hidden sm:block">
                     |
                 </div>
-                <Link href={"https://alessio-capecchi-photographer.netlify.app/"} className="text-xs text-neutral-500 flex flex-row gap-1 justify-center items-center">
+                <Link href={"https://alessiocapecchi.com"} className="text-xs text-neutral-500 flex flex-row gap-1 justify-center items-center">
                     Made with<HeartIcon weight="fill" />by Alessio Capecchi
                 </Link>
             </div>
